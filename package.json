@@ -1,0 +1,62 @@
+{
+  "name": "@cikian/dsh-cture-image",
+  "displayName": "Cture Image",
+  "description": "OpenAI-compatible image generation for DeepSeek Harness: text-to-image, image editing and batch generation, with the pictures rendered straight in the conversation — 通过 OpenAI 兼容接口生图与修图。",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "cikian",
+    "url": "https://github.com/Cikian"
+  },
+  "homepage": "https://github.com/Cikian/dsh-cture-image#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cikian/dsh-cture-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cikian/dsh-cture-image/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "image-generation",
+    "text-to-image",
+    "image-editing",
+    "openai",
+    "gpt-image"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-tool"
+      ]
+    }
+  }
+}

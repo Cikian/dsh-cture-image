@@ -1,0 +1,11 @@
+# Register the Cture Image capability.
+#
+# This file is the bundle layer for @cikian/dsh-cture-image: the profile applies
+# it after the shipped bundles, inserting one row that mounts the plugin's Host
+# half. `name` is the package name because the bundle is installed into the
+# profile's node_modules, which is also what lets the Host half resolve its
+# Node builtin imports and the Client half resolve `react`.
+- insert:
+    - id: tool-imagegen
+      name: "@cikian/dsh-cture-image"
+      config: {}

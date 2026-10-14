@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cture Image",
+    "description": "Generate and edit images through an OpenAI-compatible API — text-to-image, reference-image editing, and batch generation. Pictures appear in the conversation and are saved to the workspace."
+  }
+}

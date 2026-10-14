@@ -1,0 +1,8 @@
+# Keep line endings identical for every contributor: LF in the repository and in
+# the working tree, so a Windows checkout and a Linux CI run see the same bytes.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.tgz binary
+*.ico binary
